@@ -1,0 +1,32 @@
+{
+    // 设置智能感知（包括路径识别、代码补全等），配置参考：https://blog.csdn.net/FRcheng/article/details/140764991
+    "configurations": [
+        {
+            "name": "c++",
+            "includePath": [
+                "${workspaceFolder}/inc/**",
+                "${workspaceFolder}/src/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "${env:MINGW_HOME}/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+            
+            // "browse": {
+            //     "path": [
+            //         "${workspaceFolder}/src",
+            //         "${workspaceFolder}/inc"
+            //     ],
+            //     "limitSymbolsToIncludedHeaders": true,
+            //     "databaseFilename": "${workspaceFolder}/.vscode/browse.vdb"
+            // }
+
+        }
+    ],
+    "version": 4
+}
