@@ -4,15 +4,15 @@
 #include<vector>
 using namespace std;
 
-class Subject;
-class Observer{
+class Subject_o;
+class Observer_o{
 public:
-    Observer(string name, Subject *sub){
+    Observer_o(string name, Subject_o *sub){
         this->name = name;
         this->sub = sub;
     }
 
-    void changeSubject(Subject *sub){
+    void changeSubject(Subject_o *sub){
         this->sub = sub;
     }
 
@@ -20,5 +20,5 @@ public:
 
 protected:
     string name;
-    Subject *sub;
+    Subject_o *sub;
 };

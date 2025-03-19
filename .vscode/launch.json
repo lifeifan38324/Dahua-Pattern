@@ -4,14 +4,14 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\build\\\\${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}\\build\\main.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "C:/MinGW/bin",
+            "cwd": "${workspaceFolder}\\src",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "miDebuggerPath": "${env:MINGW_HOME}\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",

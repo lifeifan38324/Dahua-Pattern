@@ -83,8 +83,11 @@
         "numbers": "cpp",
         "span": "cpp",
         "text_encoding": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "map": "cpp",
+        "typeindex": "cpp"
     },
+    "C_Cpp.formatting": "default",
     // "code-runner.executorMap": {
     //     "c": "cd $dir && gcc *.c -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     //     "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",

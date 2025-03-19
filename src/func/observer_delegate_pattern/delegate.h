@@ -172,7 +172,7 @@ public:
 
 private: //堵死这两种带参构造函数
     CMultiDelegate (const CMultiDelegate& _event) { }
-    CMultiDelegate& operator= (const CMultiDelegate& _event) { }
+    CMultiDelegate& operator= (const CMultiDelegate& _event) { return *this; }
 
 private:
     ListDelegate mListDelegates;

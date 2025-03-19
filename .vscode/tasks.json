@@ -29,7 +29,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}\\src\\*.cpp",
-                "${workspaceFolder}\\src\\func\\observer_delegate_pattern\\*.cpp",
+                "${workspaceFolder}\\src\\func\\*\\*.cpp",
                 "-I","${workspaceFolder}\\src\\func",
                 "-I","${workspaceFolder}\\inc",
                 "-o",

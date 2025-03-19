@@ -1,17 +1,17 @@
 #pragma once
-#include "observer_pattern/Subject.h"
-#include "observer_pattern/Secretary.h"
-#include "observer_pattern/Boss.h"
-#include "observer_pattern/Observer.h"
-#include "observer_pattern/StockObserver.h"
-#include "observer_pattern/NBAObserver.h"
+#include "observer_pattern/Subject_o.h"
+#include "observer_pattern/Secretary_o.h"
+#include "observer_pattern/Boss_o.h"
+#include "observer_pattern/Observer_o.h"
+#include "observer_pattern/StockObserver_o.h"
+#include "observer_pattern/NBAObserver_o.h"
 
 
 void include_main(){
-    Subject *tongzizhe1 = new Secretary();
+    Subject_o *tongzizhe1 = new Secretary_o();
 	
-	Observer *tongshi1 = new StockObserver("李非凡", tongzizhe1);
-	Observer *tongshi2 = new NBAObserver("王林林", tongzizhe1);
+	Observer_o *tongshi1 = new StockObserver_o("李非凡", tongzizhe1);
+	Observer_o *tongshi2 = new NBAObserver_o("王林林", tongzizhe1);
 
 	tongzizhe1->Attach(tongshi1);
 	tongzizhe1->Attach(tongshi2);
@@ -19,7 +19,7 @@ void include_main(){
     tongzizhe1->setAction("老板回来了lff! ");
     tongzizhe1->Notify();
 
-    Subject *tongzizhe2 = new Boss();
+    Subject_o *tongzizhe2 = new Boss_o();
 
     tongshi1->changeSubject(tongzizhe2);
     tongshi2->changeSubject(tongzizhe2);
