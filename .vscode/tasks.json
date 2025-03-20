@@ -48,12 +48,23 @@
                     ]
                 }
             ],
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "powershell make -f makefile",
+            // "args": [
+            //     "make -f makefile"
+            // ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "调试器生成的任务。"
-        }
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
     ],
     
     "presentation": {//执行这个任务时的一些其他设定
