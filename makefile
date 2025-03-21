@@ -23,7 +23,7 @@ $(TARGET) : $(OBJS)
 
 $(OUTPUT)/%.o : src/%.cpp
 	@Write-Output "compile $<..."
-	@New-Item -ItemType Directory -Path "$(dir $@)" -Force
+	@New-Item -ItemType Directory -Path "$(dir $@)" -Force > $null 2>&1
 	@$(CXX) -MMD -MP -c $(INCS) $< -o $@
 
 # @Write-Output compile $<...
