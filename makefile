@@ -5,6 +5,7 @@ CXX = g++
 
 SUBDIR := $(ROOT)/src
 SUBDIR += $(ROOT)/src/func
+SUBDIR += $(ROOT)/src/C++Primer
 
 TARGET := $(ROOT)/build/main
 OUTPUT := $(ROOT)/output
@@ -23,7 +24,7 @@ $(TARGET) : $(OBJS)
 
 $(OUTPUT)/%.o : src/%.cpp
 	@Write-Output "compile $<..."
-	@New-Item -ItemType Directory -Path "$(dir $@)" -Force > $null 2>&1
+	@New-Item -ItemType Directory -Path "$(dir $@)" -Force | Out-Null
 	@$(CXX) -MMD -MP -c $(INCS) $< -o $@
 
 # @Write-Output compile $<...
