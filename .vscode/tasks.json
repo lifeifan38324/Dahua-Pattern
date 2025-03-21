@@ -53,7 +53,7 @@
         {
             "label": "make",
             "type": "shell",
-            "command": "powershell make -f makefile",
+            "command": "make -f makefile",
             // "args": [
             //     "make -f makefile"
             // ],
@@ -63,7 +63,13 @@
             },
             "problemMatcher": [
                 "$gcc"
-            ]
+            ],
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",  // 强制使用 CMD
+                    "args": ["/d", "/c"]     // 禁用 AutoRun 脚本
+                }
+            }
         },
     ],
     
@@ -72,7 +78,7 @@
         "reveal": "always",//执行任务时是否跳转到终端面板，可以为always，silent，never
         "focus": true,//设为true后可以使执行task时焦点聚集在终端，但对编译来说，设为true没有意义，因为运行的时候才涉及到输入
         "panel": "new", //每次执行这个task时都新建一个终端面板
-        "showReuseMessage": true,//控制是否显示“终端将被任务重用, 按任意键关闭”提示.
+        "showReuseMessage": false,//控制是否显示“终端将被任务重用, 按任意键关闭”提示.
         "clear": false
     }
 }
