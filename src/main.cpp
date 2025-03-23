@@ -1,7 +1,7 @@
 #include<iostream>
 #include<stdio.h>
 #include<string>
-#include"sequential_comtainer/include.h"
+#include"19_combination_pattern/include2.h"
 using namespace std;
 
 void my_pause(){

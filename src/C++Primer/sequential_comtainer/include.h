@@ -6,5 +6,9 @@ using namespace std;
 
 
 void include_main(){
-    cout << "sequential_comtainer" << endl;
+    A a1;
+    a1.show();
+
+    A a2("李非凡");
+    a2.show();
 }
