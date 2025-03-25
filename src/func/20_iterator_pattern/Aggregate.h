@@ -3,10 +3,10 @@
 #include <string>
 using namespace std;
 
-template<class T>
-class Iterator;
-template<class T>
+
+class M_Iterator;
+
 class Aggregate{
 public:
-    virtual Iterator* CreateIterator() = 0;
+    virtual M_Iterator* CreateIterator() = 0;
 };

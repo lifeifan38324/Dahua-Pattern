@@ -1,26 +1,26 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "20_iterator_pattern/Iterator.h"
-#include "20_iterator_pattern/ConcreteAggregate.h"
+#include "20_iterator_pattern/M_Iterator.h"
+// #include "20_iterator_pattern/ConcreteAggregate.h"
 using namespace std;
 
 class ConcreteAggregate;
 
-template<class T>
-class ConcreteIterator: public Iterator{
+// template<class T>
+class ConcreteIterator: public M_Iterator {
 public:
     ConcreteIterator(ConcreteAggregate *aggregate){
         this->aggregate = aggregate;
     }
 
-    T* First();
+    objectStr First();
 
-    T* Next();
+    objectStr Next();
 
     bool IsDone();
 
-    T* CurrentItem();
+    objectStr CurrentItem();
 
 private:
     ConcreteAggregate *aggregate;

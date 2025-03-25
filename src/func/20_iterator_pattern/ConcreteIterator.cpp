@@ -1,13 +1,14 @@
 #include "20_iterator_pattern/ConcreteIterator.h"
+#include "20_iterator_pattern/ConcreteAggregate.h"
 
-template<class T>
-T* ConcreteIterator::First() {
+
+objectStr ConcreteIterator::First() {
     return (*aggregate)[0];
 }
 
-template<class T>
-T* ConcreteIterator::Next() {
-    Aggregate *ret = NULL;
+
+objectStr ConcreteIterator::Next() {
+    objectStr ret;
     current++;
     if(current < aggregate->Count()){
         ret = (*aggregate)[current];
@@ -15,12 +16,12 @@ T* ConcreteIterator::Next() {
     return ret;
 }
 
-template<class T>
+
 bool ConcreteIterator::IsDone() {
     return current >= aggregate->Count();
 }
 
-template<class T>
-T* ConcreteIterator::CurrentItem() {
+
+objectStr ConcreteIterator::CurrentItem() {
     return (*aggregate)[current];
 }

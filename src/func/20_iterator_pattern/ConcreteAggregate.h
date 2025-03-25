@@ -5,15 +5,22 @@
 #include "20_iterator_pattern/Aggregate.h"
 using namespace std;
 
-template<class T>
+typedef string objectStr;
+
+class ConcreteIterator;
+// template<class T>
 class ConcreteAggregate: public Aggregate{
 public:
-    Iterator<T>* CreateIterator() {};
+    M_Iterator* CreateIterator();
 
     int Count() {return items.size();}; 
 
-    T* operator[](int index) {return items[index];};
+    objectStr operator[](int index) {return items[index];};
+
+    void Add(objectStr i){
+        items.push_back(i);
+    }
 
 private:
-    vector<T*> items;
+    vector<objectStr> items;
 };
