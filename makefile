@@ -1,7 +1,7 @@
 ROOT := $(CURDIR)
 SHELL = powershell.exe
 
-CXX = g++
+CXX = g++ -g
 
 SUBDIR := $(ROOT)/src
 SUBDIR += $(ROOT)/src/func

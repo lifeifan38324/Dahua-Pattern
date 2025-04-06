@@ -88,6 +88,7 @@
         "typeindex": "cpp"
     },
     "C_Cpp.formatting": "default",
+    "C_Cpp.errorSquiggles": "enabled",
     // "code-runner.executorMap": {
     //     "c": "cd $dir && gcc *.c -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     //     "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
